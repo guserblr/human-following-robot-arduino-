@@ -1,0 +1,149 @@
+//Included Libraries
+
+#include <AFMotor.h>
+
+
+
+//MACROS are defined here
+
+float getDistance(int trig,int echo){
+
+pinMode(trig,OUTPUT);
+
+digitalWrite(trig,LOW);
+
+delayMicroseconds(2);
+
+digitalWrite(trig,HIGH);
+
+delayMicroseconds(10);
+
+digitalWrite(trig,LOW);
+
+pinMode(echo, INPUT);
+
+return pulseIn(echo, HIGH)/58.0;
+
+}
+
+AF_DCMotor motor1(1);
+
+AF_DCMotor motor2(2);
+
+AF_DCMotor motor3(3);
+
+AF_DCMotor motor4(4);
+
+
+
+void setup() {
+
+//put your setup code here, to run once:
+
+pinMode(14, INPUT);
+
+pinMode(17, INPUT);
+
+
+
+}
+
+
+
+void loop() {
+
+//put your main code here, to run repeatedly:
+
+
+
+if((getDistance(15, 16) < 20)) {
+
+motor1.setSpeed(2.55*30);
+
+motor1.run(FORWARD);
+
+motor2.setSpeed(2.55*30);
+
+motor2.run(FORWARD);
+
+motor3.setSpeed(2.55*30);
+
+motor3.run(FORWARD);
+
+motor4.setSpeed(2.55*30);
+
+motor4.run(FORWARD);
+
+}
+
+else {
+
+motor1.setSpeed(2.55*0);
+
+motor1.run(FORWARD);
+
+motor2.setSpeed(2.55*0);
+
+motor2.run(FORWARD);
+
+motor3.setSpeed(2.55*0);
+
+motor3.run(FORWARD);
+
+motor4.setSpeed(2.55*0);
+
+motor4.run(FORWARD);
+
+}
+
+if((digitalRead(14) == 1)) {
+
+motor2.setSpeed(2.55*30);
+
+motor2.run(FORWARD);
+
+motor1.setSpeed(2.55*30);
+
+motor1.run(FORWARD);
+
+}
+
+else {
+
+motor2.setSpeed(2.55*0);
+
+motor2.run(FORWARD);
+
+motor1.setSpeed(2.55*0);
+
+motor1.run(FORWARD);
+
+}
+
+if((digitalRead(17) == 1)) {
+
+motor3.setSpeed(2.55*30);
+
+motor3.run(FORWARD);
+
+motor4.setSpeed(2.55*30);
+
+motor4.run(FORWARD);
+
+}
+
+else {
+
+motor3.setSpeed(2.55*0);
+
+motor3.run(FORWARD);
+
+motor4.setSpeed(2.55*0);
+
+motor4.run(FORWARD);
+
+}
+
+}
+
+
