@@ -14,15 +14,16 @@ An Arduino-based human-following robot code block generated via PictoBlox. The g
 
 ## 🚦 Current Status
 * ✅ **Ultrasonic Distance Control:** Working. The robot detects objects within 20cm, moves forward, and stops when clear.
-* ❌ **IR Sensor Turning Logic:** **Issue / Work in Progress.** The left/right turning logic using IR sensors (Pins 14 & 17) is currently not functioning as intended.
+* ❌ **IR Sensor Turning Logic:** **Issue / Work in Progress.** The left/right turning logic using IR sensors (Pins A0 & A3) is currently not functioning as intended.
 
 ---
 
 ## ❓ Known Issue / Help Needed
-The current `loop()` checks the IR sensors sequentially after the distance logic, causing motor commands to immediately override each other every cycle. 
+When an object is within 20cm, the robot continues moving straight regardless of the IR sensors because the ultrasonic logic continuously overrides the left and right steering commands every loop. if any of you guys who are reading this know what to do pls feel free to give a sugesstion 
 
 If you are contributing or reviewing this code feel free to :
 1. Check the logic flow inside `void loop()`.
 2. Open an **Issue** or submit a **Pull Request** if you have a solution to fix the directional steering balance.
 
 ---
+                    
