@@ -1,0 +1,12 @@
+{
+  "id": "quarky",
+  "name": "Quarky",
+  "family": "Quarky",
+  "description": "Quarky family board; exact connector details depend on the model.",
+  "pins": [],
+  "interfaces": [
+    "digital",
+    "analog",
+    "pwm"
+  ]
+}

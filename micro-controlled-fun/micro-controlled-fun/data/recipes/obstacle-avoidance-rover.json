@@ -1,0 +1,85 @@
+{
+  "id": "obstacle-avoidance-rover",
+  "title": "Obstacle Avoidance Rover",
+  "category": "robotics",
+  "difficulty": "intermediate",
+  "description": "A rover that measures the distance ahead and changes direction when something gets in the way.",
+  "supportedBoards": [
+    "arduino-uno",
+    "arduino-mega",
+    "esp32",
+    "raspberry-pi-pico"
+  ],
+  "requiredHardware": [
+    {
+      "id": "ultrasonic-sensor",
+      "quantity": 1
+    },
+    {
+      "id": "servo",
+      "quantity": 1
+    },
+    {
+      "id": "dc-gear-motor",
+      "quantity": 2
+    },
+    {
+      "id": "motor-driver",
+      "quantity": 1
+    },
+    {
+      "id": "battery-pack",
+      "quantity": 1
+    },
+    {
+      "id": "robot-chassis",
+      "quantity": 1
+    },
+    {
+      "id": "robot-wheels",
+      "quantity": 1
+    },
+    {
+      "id": "caster-wheel",
+      "quantity": 1
+    }
+  ],
+  "optionalHardware": [],
+  "connections": [
+    {
+      "id": "trig",
+      "label": "Ultrasonic Trigger",
+      "signal": "digital-output"
+    },
+    {
+      "id": "echo",
+      "label": "Ultrasonic Echo",
+      "signal": "digital-input"
+    },
+    {
+      "id": "servo",
+      "label": "Scanner Servo",
+      "signal": "pwm"
+    },
+    {
+      "id": "left-a",
+      "label": "Left Motor A",
+      "signal": "digital-output"
+    },
+    {
+      "id": "left-b",
+      "label": "Left Motor B",
+      "signal": "digital-output"
+    },
+    {
+      "id": "right-a",
+      "label": "Right Motor A",
+      "signal": "digital-output"
+    },
+    {
+      "id": "right-b",
+      "label": "Right Motor B",
+      "signal": "digital-output"
+    }
+  ]
+}

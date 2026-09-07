@@ -1,0 +1,36 @@
+{
+  "id": "weather-station",
+  "title": "Weather Station",
+  "category": "automation",
+  "difficulty": "intermediate",
+  "description": "A small station that reads environmental sensors and puts the results on a display.",
+  "supportedBoards": [
+    "arduino-uno",
+    "arduino-mega",
+    "esp32",
+    "raspberry-pi-pico",
+    "microbit"
+  ],
+  "requiredHardware": [
+    {
+      "id": "display-oled-128x64",
+      "quantity": 1
+    },
+    {
+      "id": "breadboard",
+      "quantity": 1
+    },
+    {
+      "id": "jumper-wires",
+      "quantity": 1
+    }
+  ],
+  "optionalHardware": [],
+  "connections": [
+    {
+      "id": "display",
+      "label": "OLED Display",
+      "signal": "i2c"
+    }
+  ]
+}

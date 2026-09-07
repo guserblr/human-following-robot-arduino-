@@ -1,0 +1,109 @@
+{
+  "id": "human-tracking-robot",
+  "title": "Human Tracking Robot",
+  "category": "robotics",
+  "difficulty": "advanced",
+  "description": "A more involved rover that uses multiple sensors to detect a person, keep a useful distance and steer toward them.",
+  "supportedBoards": [
+    "arduino-uno",
+    "arduino-mega",
+    "esp32",
+    "raspberry-pi-pico"
+  ],
+  "requiredHardware": [
+    {
+      "id": "ir-sensor",
+      "quantity": 2
+    },
+    {
+      "id": "ultrasonic-sensor",
+      "quantity": 1
+    },
+    {
+      "id": "dc-gear-motor",
+      "quantity": 2
+    },
+    {
+      "id": "motor-driver",
+      "quantity": 1
+    },
+    {
+      "id": "battery-pack",
+      "quantity": 1
+    },
+    {
+      "id": "robot-chassis",
+      "quantity": 1
+    },
+    {
+      "id": "robot-wheels",
+      "quantity": 1
+    },
+    {
+      "id": "caster-wheel",
+      "quantity": 1
+    },
+    {
+      "id": "jumper-wires",
+      "quantity": 1
+    }
+  ],
+  "optionalHardware": [
+    {
+      "id": "servo",
+      "quantity": 1
+    }
+  ],
+  "connections": [
+    {
+      "id": "ir-left",
+      "label": "Left Detection Sensor",
+      "signal": "digital-input"
+    },
+    {
+      "id": "ir-right",
+      "label": "Right Detection Sensor",
+      "signal": "digital-input"
+    },
+    {
+      "id": "trig",
+      "label": "Ultrasonic Trigger",
+      "signal": "digital-output"
+    },
+    {
+      "id": "echo",
+      "label": "Ultrasonic Echo",
+      "signal": "digital-input"
+    },
+    {
+      "id": "left-a",
+      "label": "Left Motor A",
+      "signal": "digital-output"
+    },
+    {
+      "id": "left-b",
+      "label": "Left Motor B",
+      "signal": "digital-output"
+    },
+    {
+      "id": "left-pwm",
+      "label": "Left Motor Speed",
+      "signal": "pwm"
+    },
+    {
+      "id": "right-a",
+      "label": "Right Motor A",
+      "signal": "digital-output"
+    },
+    {
+      "id": "right-b",
+      "label": "Right Motor B",
+      "signal": "digital-output"
+    },
+    {
+      "id": "right-pwm",
+      "label": "Right Motor Speed",
+      "signal": "pwm"
+    }
+  ]
+}

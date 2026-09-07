@@ -1,0 +1,26 @@
+{
+  "id": "esp8266",
+  "name": "ESP8266",
+  "family": "ESP",
+  "description": "ESP8266 family development board; exact pins vary by module.",
+  "pins": [
+    "D0",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "A0"
+  ],
+  "interfaces": [
+    "digital",
+    "analog",
+    "pwm",
+    "i2c",
+    "spi",
+    "uart"
+  ]
+}

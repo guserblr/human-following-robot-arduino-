@@ -1,0 +1,13 @@
+{
+  "id": "t-watch",
+  "name": "T-Watch",
+  "family": "ESP32",
+  "description": "T-Watch family; exact pins depend on the model.",
+  "pins": [],
+  "interfaces": [
+    "digital",
+    "analog",
+    "i2c",
+    "spi"
+  ]
+}

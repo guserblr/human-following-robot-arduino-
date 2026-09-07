@@ -1,0 +1,11 @@
+{
+  "id": "tecbits",
+  "name": "TECbits",
+  "family": "TECbits",
+  "description": "TECbits hardware family; exact board details depend on the model.",
+  "pins": [],
+  "interfaces": [
+    "digital",
+    "analog"
+  ]
+}

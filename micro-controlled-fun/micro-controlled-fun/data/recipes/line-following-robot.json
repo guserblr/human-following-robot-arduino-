@@ -1,0 +1,91 @@
+{
+  "id": "line-following-robot",
+  "title": "Line Following Robot",
+  "category": "robotics",
+  "difficulty": "intermediate",
+  "description": "A two-sensor rover that keeps itself on a track by changing the speed and direction of its two drive motors.",
+  "supportedBoards": [
+    "arduino-uno",
+    "arduino-nano",
+    "arduino-mega",
+    "esp32",
+    "raspberry-pi-pico"
+  ],
+  "requiredHardware": [
+    {
+      "id": "ir-sensor",
+      "quantity": 2
+    },
+    {
+      "id": "dc-gear-motor",
+      "quantity": 2
+    },
+    {
+      "id": "motor-driver",
+      "quantity": 1
+    },
+    {
+      "id": "battery-pack",
+      "quantity": 1
+    },
+    {
+      "id": "robot-chassis",
+      "quantity": 1
+    },
+    {
+      "id": "robot-wheels",
+      "quantity": 1
+    },
+    {
+      "id": "caster-wheel",
+      "quantity": 1
+    },
+    {
+      "id": "jumper-wires",
+      "quantity": 1
+    }
+  ],
+  "optionalHardware": [],
+  "connections": [
+    {
+      "id": "ir-left",
+      "label": "Left IR Sensor",
+      "signal": "analog-input"
+    },
+    {
+      "id": "ir-right",
+      "label": "Right IR Sensor",
+      "signal": "analog-input"
+    },
+    {
+      "id": "left-a",
+      "label": "Left Motor A",
+      "signal": "digital-output"
+    },
+    {
+      "id": "left-b",
+      "label": "Left Motor B",
+      "signal": "digital-output"
+    },
+    {
+      "id": "left-pwm",
+      "label": "Left Motor Speed",
+      "signal": "pwm"
+    },
+    {
+      "id": "right-a",
+      "label": "Right Motor A",
+      "signal": "digital-output"
+    },
+    {
+      "id": "right-b",
+      "label": "Right Motor B",
+      "signal": "digital-output"
+    },
+    {
+      "id": "right-pwm",
+      "label": "Right Motor Speed",
+      "signal": "pwm"
+    }
+  ]
+}
